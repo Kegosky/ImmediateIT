@@ -342,3 +342,34 @@ h3{
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+/*-----------social-icons---------------*/
+.social-icons
+{
+    top: 50%;
+    transform: translateY(-50%);
+    position: sticky;
+    z-index: 1;
+    width: 80px;
+}
+.social-icons ul
+{
+    padding: initial;
+}
+.social-icons ul li
+{
+    height: 40px;
+    width: 40px;
+    list-style-type: none;
+    padding-left: 12px;
+    padding-top: 6px;
+    margin-top: 5px;
+    color: #fff;
+    background: #efb26d;
+
+}
+.social-icons ul li:hover
+{
+    padding-left: 30px;
+    width: 80px;
+    transition: 1s;
+}
