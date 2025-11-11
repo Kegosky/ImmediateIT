@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMMEDIATEIT SOLUTIONS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2? family=Poppins:wght@100;200;300;400;600;700&display=swap"
+     rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src ="images/logo.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="contacts.html">CONTACTS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <!------<h1>CONTACT US</h1>---------->
+
+    </section>
+
+<!-----------------CONTACT us content------------------------------------------------->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d737.8951668342115!2d25.934800969533!3d-24.62705117951263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebb5b1725c28443%3A0xfcc8ce3fd47ede94!2sBbs%20shopping%20mall!5e1!3m2!1sen!2sbw!4v1762776407157!5m2!1sen!2sbw"
+     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+     referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</section>
+
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>UNIT F11</h5>
+                    <p>BBS MALL,GABORONE</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+267 3960206/ +267 76041904</h5>
+                    <p>Monday to saturday, 10 AM to 6 PM</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>info@gmail.com</h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+
+
+        </div>
+        <div class="contact-col">
+            <form action="form-handle.php" method="post">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter your email address" required>
+                <input type="text" name="subject" placeholder="Enter your subject" required>
+                <textarea rows="8" name="Message" placeholder="Message" required></textarea>
+                <button type="submit" class="hero-btn red-btn">SEND</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<!-----------------footer------------------------------------------------->
+
+<section class="footer">
+    <h4>ABOUT US</h4>
+    <p>Our response and resolution times for support services are usually within 30minutes to 2 hours in Gaborone and surrounding areas.
+        We are pleased to have a track record of providing a stable I.T environment to all the clients we are supporting. </p>
+
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-whatsapp"></i>
+        <i class="fa fa-envelope"></i>
+
+    </div>
+
+</section>
+
+<!-----------------JS toogle------------------------------------------------->
+    <script>
+
+        var navLinks= document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+
+        }
+        function hideMenu() {
+            navLinks.style.right="-200px";
+        }
+    </script>
+
+</body>
+</html>

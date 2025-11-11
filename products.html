@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMMEDIATEIT SOLUTIONS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2? family=Poppins:wght@100;200;300;400;600;700&display=swap"
+     rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src ="images/logo.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="contacts.html">CONTACTS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <!-----<h1>OUR PRODUCTS</h1>-------->
+
+    </section>
+
+<!-----------------products content------------------------------------------------->
+<section class="products">
+    <h1>OUR PRODUCTS</h1>
+    <p>Our wide range of products</p>
+    <div class="row">
+        <div class="products-col">
+            <img src="images/laptop.jpg">
+            <div class="layer">
+                <h3>LAPTOPS</h3>
+            </div>
+
+        </div>
+        <div class="products-col">
+            <img src="images/prin.jpg">
+            <div class="layer">
+                <h3>PRINTERS</h3>
+            </div>
+        </div>
+        <div class="products-col">
+            <img src="images/mouse.jpg">
+            <div class="layer">
+                <h3>MOUSE</h3>
+            </div>
+        </div>   
+
+    </div>
+</section>
+
+
+<!-----------------footer------------------------------------------------->
+
+<section class="footer">
+    <h4>ABOUT US</h4>
+    <p>Our response and resolution times for support services are usually within 30minutes to 2 hours in Gaborone and surrounding areas.
+        We are pleased to have a track record of providing a stable I.T environment to all the clients we are supporting. </p>
+
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-whatsapp"></i>
+        <i class="fa fa-envelope"></i>
+
+    </div>
+
+</section>
+
+<!-----------------JS toogle------------------------------------------------->
+    <script>
+
+        var navLinks= document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+
+        }
+        function hideMenu() {
+            navLinks.style.right="-200px";
+        }
+    </script>
+
+</body>
+</html>
